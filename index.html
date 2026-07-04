@@ -17,6 +17,41 @@
   .hscroll::-webkit-scrollbar-thumb { background: #cfcdc4; }
   .hscroll::-webkit-scrollbar-track { background: #f2f0e9; }
   @keyframes mq { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  html, body { overflow-x:hidden; }
+  @media screen and (max-width: 900px) {
+    div[style*="padding:20px 80px"] { padding-left:24px !important; padding-right:24px !important; }
+    div[style*="padding:60px 80px 52px"] { padding-left:24px !important; padding-right:24px !important; }
+    div[style*="padding:52px 80px"] { padding-left:24px !important; padding-right:24px !important; }
+    div[style*="padding: 80px"] { padding-left:24px !important; padding-right:24px !important; }
+    div[style*="padding:34px 80px"] { padding-left:24px !important; padding-right:24px !important; }
+    div[style*="padding:22px 80px"] { padding-left:24px !important; padding-right:24px !important; }
+    div[style*="padding:44px 80px"] { padding-left:24px !important; padding-right:24px !important; }
+    div[style*="padding:72px 80px"] { padding-left:24px !important; padding-right:24px !important; }
+    .hscroll { padding-left:24px !important; padding-right:24px !important; }
+    div[style*="grid-template-columns:1fr 1fr 1fr"] { padding-left:24px !important; padding-right:24px !important; grid-template-columns:1fr 1fr !important; }
+    div[style*="grid-template-columns:1fr 1fr;"] { grid-template-columns:1fr !important; }
+    div[style*="grid-template-columns:1.3fr 1fr"] { grid-template-columns:1fr !important; }
+    h1 { font-size:56px !important; }
+    h2[style*="font-size:84px"] { font-size:44px !important; }
+    h2[style*="font-size:52px"] { font-size:32px !important; }
+    h3[style*="font-size:31px"] { font-size:24px !important; }
+    .hscroll img, .hscroll video { height:220px !important; }
+    div[style*="gap:24px; align-items:center; font-size:12px"] { overflow-x:auto !important; max-width:56vw !important; gap:14px !important; font-size:11px !important; -ms-overflow-style:none; scrollbar-width:none; }
+    div[style*="gap:24px; align-items:center; font-size:12px"]::-webkit-scrollbar { display:none; }
+    div[style*="gap:24px; align-items:center; font-size:12px"] a { flex-shrink:0 !important; }
+  }
+  @media screen and (max-width: 480px) {
+    div[style*="padding:20px 80px"], div[style*="padding:60px 80px 52px"], div[style*="padding:52px 80px"], div[style*="padding: 80px"], div[style*="padding:34px 80px"], div[style*="padding:22px 80px"], div[style*="padding:44px 80px"], div[style*="padding:72px 80px"] { padding-left:16px !important; padding-right:16px !important; }
+    .hscroll { padding-left:16px !important; padding-right:16px !important; }
+    div[style*="grid-template-columns:1fr 1fr 1fr"] { padding-left:16px !important; padding-right:16px !important; grid-template-columns:1fr !important; }
+    div[style*="grid-template-columns:120px 1fr"] { grid-template-columns:1fr !important; }
+    div[style*="gap:24px; align-items:flex-start; margin-bottom:26px"] { flex-direction:column !important; }
+    h1 { font-size:38px !important; }
+    h2[style*="font-size:84px"] { font-size:32px !important; }
+    h2[style*="font-size:52px"] { font-size:26px !important; }
+    .hscroll img, .hscroll video { height:170px !important; }
+  }
 </style>
 </head>
 <body>
